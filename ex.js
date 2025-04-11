@@ -2,7 +2,7 @@ function game() {
 
     let level = 1;
     let levelFinal = 3;
-
+    alert("Let's play a game! 🎮 \n Welcome to the Quiz Game!\n" + "You will go through " + levelFinal + " levels." + "Good luck!\n");
     let levels = [];
     levels[1] = {
         topics: ['art', 'sport', 'science'],
@@ -33,6 +33,7 @@ function game() {
 
     
     while (level <= levelFinal) {
+        
         // 0. create a string with all possible topics for the current level
         let topicsPrompt = '';
         for (let i = 0; i < levels[level].topics.length; i++) {
@@ -51,10 +52,10 @@ function game() {
         // 3. if answer is right - congrats, go to the next level
         //    if answer is wrong - bad boy! you need to start from the beginning
         if (userAnswer.trim().toLowerCase() === levels[level].questions[topicSelected].answer.toLowerCase()) {
-            alert('Correct!');
+            alert('Correct! ✅');
             level++;
             if (level > levelFinal) {
-                alert(" Great job! You finished the game!");
+                alert(" Great job! You finished the game! 🏆");
             } else {
                 alert("next level  "+ level);
             }
