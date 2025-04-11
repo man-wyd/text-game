@@ -2,8 +2,8 @@ function game() {
 
     let level = 1;
     let levelFinal = 3;
-    alert("Let's play a game! 🎮 \n Welcome to the Quiz Game!\n" + "You will go through " + levelFinal + " levels." + "Good luck!\n");
     let levels = [];
+
     levels[1] = {
         topics: ['art', 'sport', 'science'],
         questions: [
@@ -31,6 +31,7 @@ function game() {
         ]
     };
 
+    alert("Let's play a game! 🎮 \nWelcome to the Quiz Game!\n" + "You will go through " + levelFinal + " levels.\n" + "Good luck!");
     
     while (level <= levelFinal) {
         
@@ -61,7 +62,6 @@ function game() {
             alert('Wrong answer! 😡 Restarting the game...');
             level = 1;
         }
-
         
     }
 
