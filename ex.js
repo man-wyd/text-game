@@ -47,20 +47,18 @@ function game() {
         // 2. ask the question according to selected topic
         let userAnswer = prompt(levels[level].questions[topicSelected].question);
 
-
-
         // 3. if answer is right - congrats, go to the next level
         //    if answer is wrong - bad boy! you need to start from the beginning
         if (userAnswer.trim().toLowerCase() === levels[level].questions[topicSelected].answer.toLowerCase()) {
             alert('Correct! ✅');
             level++;
             if (level > levelFinal) {
-                alert(" Great job! You finished the game! 🏆");
+                alert("Great job! You finished the game! 🏆");
             } else {
-                alert("next level  "+ level);
+                alert("Next level is "+ level);
             }
         } else {
-            alert('Wrong answer! Restarting the game...');
+            alert('Wrong answer! 😡 Restarting the game...');
             level = 1;
         }
 
