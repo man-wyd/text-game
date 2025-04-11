@@ -18,7 +18,7 @@ function game() {
         questions: [
             {question: 'Who was the first President of the United States', answer: 'George Washington'},
             {question: 'What animal goes "moo"?', answer: 'Cow'},
-            {question: 'What is the name of the computer’s main processing chip', answer: 'CPU'},
+            {question: 'What is the name of the computers main processing chip', answer: 'CPU'},
         ]
     };
 
@@ -26,7 +26,7 @@ function game() {
         topics: ['logic', 'fun facts', 'Music'],
         questions: [
             {question: 'What number comes next: 2, 4, 8, 16...?', answer: '32'},
-            {question: 'What animal can’t jump?', answer: 'Elephant'},
+            {question: 'What animal cant jump?', answer: 'Elephant'},
             {question: 'What instrument has 88 keys?', answer: 'Piano'},
         ]
     };
@@ -52,10 +52,10 @@ function game() {
         // 3. if answer is right - congrats, go to the next level
         //    if answer is wrong - bad boy! you need to start from the beginning
         if (userAnswer.trim().toLowerCase() === levels[level].questions[topicSelected].answer.toLowerCase()) {
-            alert('Correct! ✅');
+            alert('Correct! ');
             level++;
             if (level > levelFinal) {
-                alert(" Great job! You finished the game! 🏆");
+                alert(" Great job! You finished the game!");
             } else {
                 alert("next level  "+ level);
             }
