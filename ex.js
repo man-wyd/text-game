@@ -14,20 +14,20 @@ function game() {
     };
 
     levels[2] = {
-        topics: ['', '', ''],
+        topics: ['politics', 'animals', 'IT'],
         questions: [
-            {question: '', answer: ''},
-            {question: '', answer: ''},
-            {question: '', answer: ''},
+            {question: 'Who was the first President of the United States', answer: 'George Washington'},
+            {question: 'What animal goes "moo"?', answer: 'Cow'},
+            {question: 'What is the name of the computer’s main processing chip', answer: 'CPU'},
         ]
     };
 
     levels[3] = {
-        topics: ['', '', ''],
+        topics: ['logic', 'fun facts', 'Music'],
         questions: [
-            {question: '', answer: ''},
-            {question: '', answer: ''},
-            {question: '', answer: ''},
+            {question: 'What number comes next: 2, 4, 8, 16...?', answer: '32'},
+            {question: 'What animal can’t jump?', answer: 'Elephant'},
+            {question: 'What instrument has 88 keys?', answer: 'Piano'},
         ]
     };
 
