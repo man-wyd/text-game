@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercices 4.*</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: url(consciousness.avif) no-repeat;
+            background-size: cover;
+        }
+        .center-div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*background-color: #f0f0f0;*/
+            padding: 20px;
+        }
+        input {
+            font-size: 300%;
+        }
+    </style>
     <script src="ex.js"></script>
 </head>
 <body>
 
-<input type="button" value="START" onclick="game();" />
+    <div class="center-div">
+        <input type="button" value="START" onclick="game();" />
+    </div>
 
 </body>
 </html>
