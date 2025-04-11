@@ -1,7 +1,7 @@
 function game() {
 
     let level = 1;
-    let levelFinal = 2;
+    let levelFinal = 3;
 
     let levels = [];
     levels[1] = {
@@ -12,14 +12,25 @@ function game() {
             {question: 'Who is the author of Teory of relativity?', answer: 'Einstein'},
         ]
     };
+
     levels[2] = {
-        topics: ['politics', 'medicine', 'IT'],
+        topics: ['', '', ''],
         questions: [
-            {question: '2Who painted Mona Lisa?', answer: 'Da Vinci'},
-            {question: '2Where was football founded?', answer: 'England'},
-            {question: '2Who is the author of Teory of relativity?', answer: 'Einstein'},
+            {question: '', answer: ''},
+            {question: '', answer: ''},
+            {question: '', answer: ''},
         ]
     };
+
+    levels[3] = {
+        topics: ['', '', ''],
+        questions: [
+            {question: '', answer: ''},
+            {question: '', answer: ''},
+            {question: '', answer: ''},
+        ]
+    };
+
     
     while (level <= levelFinal) {
         // 0. create a string with all possible topics for the current level
@@ -33,16 +44,29 @@ function game() {
         alert('You have selected topic ' + topicSelected);
 
         // 2. ask the question according to selected topic
-        alert(levels[level].questions[topicSelected].question);
+        let userAnswer = prompt(levels[level].questions[topicSelected].question);
+
+
 
         // 3. if answer is right - congrats, go to the next level
         //    if answer is wrong - bad boy! you need to start from the beginning
+        if (userAnswer.trim().toLowerCase() === levels[level].questions[topicSelected].answer.toLowerCase()) {
+            alert('Correct!');
+            level++;
+            if (level > levelFinal) {
+                alert(" Great job! You finished the game!");
+            } else {
+                alert("next level  "+ level);
+            }
+        } else {
+            alert('Wrong answer! Restarting the game...');
+            level = 1;
+        }
 
-        // level = 1
-
-        // level - the same
-
-        level++; // if answer is right
+        
     }
 
 }
+
+
+
