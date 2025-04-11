@@ -3,6 +3,7 @@ function game() {
     let level = 1;
     let levelFinal = 3;
 
+    alert("🎮 Welcome to the Quiz Game\n" +"You will go through " + levelFinal + " levels.\n" + "Good luck!\n");
     let levels = [];
     levels[1] = {
         topics: ['art', 'sport', 'science'],
@@ -17,7 +18,7 @@ function game() {
         topics: ['', '', ''],
         questions: [
             {question: '', answer: ''},
-            {question: '', answer: ''},
+            {question: '', answer: ''}, 
             {question: '', answer: ''},
         ]
     };
